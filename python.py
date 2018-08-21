@@ -167,70 +167,8 @@ print(letter)
 
 #******************************test
 
-#zip
-"""
-    mix to list
-"""
 
 
-
-def mergeStrings(a, b):
-    p_1 = list(a)
-    p_2 = list(b)
-    concat = "";
-    contador = 0;
-    if len(p_1)>len(p_2) :
-        for f in p_1:
-            if len(p_1) > contador:
-                concat += str(p_1[contador])
-            if len(p_2)>contador:
-                concat +=str(p_2[contador])
-            contador= contador+1
-    else:
-        for f in p_2:
-            if len(p_1)>contador:
-                concat +=str(p_1[contador])
-            concat += str(f)
-            contador= contador+1
-    return concat
-a = "abc"
-b = "def"
-
-
-#a = "zbxnsjdns"
-#b = "idowdk"
-
-
-print(mergeStrings(a,b))
-
-"""
-    find difference max
-"""
-
-
-_params = [1,2,6,4]
-
-_params = [5,10,8,7,6,5]
-
-_diference = [2]
-_temporal = []
-_contador = 0
-for item_p in _params:
-    _temporal.insert(len(_temporal), item_p)
-    if _contador==0:
-        _contador += 1
-        continue
-    _contador +=1
-    for item_t in _temporal:
-        if item_p > item_t:
-            #print("====",item_p,">",item_t,"=====")
-            _diference.insert(len(_diference), (item_p-item_t))
-        #else:
-            #print("error")
-if len(_diference)==0:
-    return -1
-else:
-    return max(_diference)
 
 
 
